@@ -1,2 +1,3 @@
 # javascript
- exercicios com javascript
+Curso de JavaScript
+
