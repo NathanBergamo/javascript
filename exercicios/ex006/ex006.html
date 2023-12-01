@@ -13,15 +13,22 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
-
         }
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()">
         interaja...
 
     </div>
+    <script>
+        function clicar(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'clicou'
+
+        }
+
+    </script>
     
 </body>
 </html>
