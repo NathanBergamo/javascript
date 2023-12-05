@@ -6,6 +6,11 @@
     <title>Qual é sua nacionalidade</title>
 </head>
 <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body{
         background-color: rgb(140, 181, 218);
         font-family: Arial, Helvetica, sans-serif;
@@ -17,24 +22,47 @@
         width: 500px;
         height: 500px;
         background-color: rgb(162, 138, 219);
+        margin-top: 20px;
+        border: 2px solid yellow;
+        border-radius: 10px 10px 10px 10px;
     }
 
     h1, h2{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
         color: rgb(24, 59, 68);
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 
+
     input{
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px 5px 5px 5px;
+    
+    }
+
+    fidlset{
+        margin: auto;
+      
+    }
+
+    p{
+        color: white;
+        padding-left: 10px;
         text-align: center;
+        padding-bottom: 10px;
     }
 </style>
 <body>
     <main>
         <h1>Qual é a nacionalidade ? </h1>
         <h2>Qual país você nasceu ? </h2><input type="text" name="txtnac" id="txtnac"> 
-        <input type="button" value="Verificar" onclick="nacionalidade()">
+            <fildset>
+                <input type="button" value="Verificar" onclick="nacionalidade()">
+            </fildset>
         <div id="res">
     </main>
 
