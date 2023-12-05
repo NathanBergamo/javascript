@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é sua nacionalidade</title>
+</head>
+<style>
+    body{
+        background-color: rgb(140, 181, 218);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+ 
+    main{
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(162, 138, 219);
+    }
+
+    h1, h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        color: rgb(24, 59, 68);
+    }
+
+
+    input{
+        text-align: center;
+    }
+</style>
+<body>
+    <main>
+        <h1>Qual é a nacionalidade ? </h1>
+        <h2>Qual país você nasceu ? </h2><input type="text" name="txtnac" id="txtnac"> 
+        <input type="button" value="Verificar" onclick="nacionalidade()">
+        <div id="res">
+    </main>
+
+    </div>
+    <script>
+        function nacionalidade(){
+            var txtnac = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Seus país é ${txtnac.value}!<br></p>`
+    
+            var nac = (txtnac.value)
+            if (nac == 'Brasil' || nac == 'brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileiro</strong></p>'
+            } else{
+                res.innerHTML += '<p>Você é <strong>Estrangeiro</strong></p>'
+            } 
+        }
+    </script>
+    
+</body>
+</html>
