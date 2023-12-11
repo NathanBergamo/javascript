@@ -8,14 +8,19 @@ function carregar(){
         // BOM DIA!
         img.src = 'imagens/dia.jpg'
         document.body.style.background = '#EFD081'
+        msg2.innerHTML = 'BOA DIA !'
+       
 
      } else if(hora >= 12 && hora < 18) {
         //BOA TARDE!
         img.src = 'imagens/tarde.jpg'
         document.body.style.background = '#ECA04F'
+        msg2.innerHTML = 'BOA TARDE !'
+      
      } else {
         //BOA NOITE
         img.src = 'imagens/noite.jpg'
         document.body.style.background = '#301E35'
+        msg2.innerHTML = 'BOA NOITE !'
      }
 }
