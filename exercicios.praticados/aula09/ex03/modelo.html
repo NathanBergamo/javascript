@@ -12,15 +12,21 @@
     </header>
     <section>
         <div>
-            <label for="iano">Ano de nascimento</label>
-            <input type="number" name="ano" id="iano" min="1940" max="2018" required>
-
+            <p>Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="1940" max="2019">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas">
+                <label for="mas">Masculino</label checked>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="submit" value="Verificar" onclick="verificar()"></p>
         </div>
         <div>
-            <label for="isexo">Sexo: </label>
-            <input type="radio" name="sexo" id="isxmas" checked> <label for="isexo">Masculino</label>
-            <input type="radio" name="sexo" id="isxfem"> <label for="isexo">Feminino</label> <br>
-            <input type="submit" value="Verificar">
+            Preencha os dados acima para ver o resultado ! 
+        
         </div>
 
     </section>
