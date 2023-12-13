@@ -15,16 +15,22 @@ function verificar(){
             gênero = 'Homem'
             if (idade >= 0 && idade < 7){
                 //crianca
+                img.setAttribute('src', 'fotos.masculinas/masculino-1ate6.jpg')
             } else if(idade >=7 && idade < 15){
                 //adolescente
+                 img.setAttribute('src', 'fotos.masculinas/masculino-7ate14.jpg')
             } else if(idade >=15 && idade <21){
                 //jovem
+                 img.setAttribute('src', 'fotos.masculinas/masculino-15ate20.jpg')
             } else if(idade >=21 && idade <35){
                 //adulto
+                 img.setAttribute('src', 'fotos.masculinas/masculino-21ate34.jpg')
             } else if(idade >= 35 && idade <60){
                 //ainda aduto
+                 img.setAttribute('src', 'fotos.masculinas/masculino-35ate59.jpg')
             } else if(idade >= 60 && idade <90){
                 //idoso
+                 img.setAttribute('src', 'fotos.masculinas/masculino-60ate90.jpg')
             }
         } else if (fsex[1].checked){
             gênero = 'Mulher'
@@ -44,5 +50,6 @@ function verificar(){
         }
         res.style.textAlign = 'Center'
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
+        res.appendChild(img)
     } 
 }
