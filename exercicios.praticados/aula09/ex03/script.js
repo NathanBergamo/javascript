@@ -28,7 +28,7 @@ function verificar(){
             } else if(idade >= 35 && idade <60){
                 //ainda aduto
                  img.setAttribute('src', 'fotos.masculinas/masculino-35ate59.jpg')
-            } else if(idade >= 60 && idade <90){
+            } else{
                 //idoso
                  img.setAttribute('src', 'fotos.masculinas/masculino-60ate90.jpg')
             }
@@ -49,7 +49,7 @@ function verificar(){
             } else if(idade >= 35 && idade <60){
                 img.setAttribute('src', 'fotos.femininas/feminino-35ate59.jpg')
                 //ainda aduto
-            } else if(idade >= 60 && idade <90){
+            } else{
                 img.setAttribute('src', 'fotos.femininas/feminino-60ate90.jpg')
                 //idoso
             }
