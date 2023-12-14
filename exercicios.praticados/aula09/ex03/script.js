@@ -35,16 +35,22 @@ function verificar(){
         } else if (fsex[1].checked){
             gênero = 'Mulher'
             if (idade >= 0 && idade < 7){
+                img.setAttribute('src', 'fotos.femininas/feminino-1ate6.jpg')
                 //crianca
             } else if(idade >=7 && idade < 15){
+                img.setAttribute('src', 'fotos.femininas/feminino-7ate14.jpg')
                 //adolescente
             } else if(idade >=15 && idade <21){
+                img.setAttribute('src', 'fotos.femininas/feminino-15ate20.jpg')
                 //jovem
             } else if(idade >=21 && idade <35){
+                img.setAttribute('src', 'fotos.femininas/feminino-21ate34.jpg')
                 //adulto
             } else if(idade >= 35 && idade <60){
+                img.setAttribute('src', 'fotos.femininas/feminino-35ate59.jpg')
                 //ainda aduto
             } else if(idade >= 60 && idade <90){
+                img.setAttribute('src', 'fotos.femininas/feminino-60ate90.jpg')
                 //idoso
             }
         }
