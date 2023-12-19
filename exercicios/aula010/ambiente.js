@@ -1,4 +1,4 @@
-var c = 1
+var c = 0
 do {
     console.log(`Passo ${c}`)
     c++
